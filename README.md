@@ -10,4 +10,6 @@
 
 ![](./assets/my-solution.png)
 
+## Challenges I faced
 
+This one was a doozie. Took me 3 hours to do everything except for the backgrounds. I'd build a statue to the one who implements a `background-overflow:` property in the next CSS update. I need it like salt. Because the current CSS lacks this feature I had to cook up something that I have no idea whether it's good practice or not.

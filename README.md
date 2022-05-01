@@ -8,6 +8,6 @@
 
 [Click here to see the live page](https://arthurpog.github.io/equalizer-landing-page/)
 
-![](./design/my-solution.png)
+![](./assets/my-solution.png)
 
 

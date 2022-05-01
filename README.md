@@ -6,7 +6,7 @@
 
 ## This is my solution
 
-[Click here to see the live page](https://arthurpog.github.io/order-summary-component/)
+[Click here to see the live page](https://arthurpog.github.io/equalizer-landing-page/)
 
 ![](./design/my-solution.png)
 

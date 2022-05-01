@@ -2,7 +2,7 @@
 
 ## This was the assignment
 
-![](./design/design.jpg)
+![](./design/desktop-design.png)
 
 ## This is my solution
 

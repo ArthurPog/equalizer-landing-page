@@ -53,15 +53,28 @@
 body {
   margin: 0;
   padding: 0 2rem;
-  background-image: url(./assets/bg-pattern-1.svg), url(./assets/bg-main-desktop.png);
-  background-repeat: no-repeat, repeat;
-  background-attachment: fixed;
-  background-position: 75vw -3vh, 1vw -25vh;
   background-color: var(--white);
+  background-image: url(./assets/bg-main-desktop.png);
+  background-position: center top -300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: .3 ease;
+}
+
+.background {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  max-width: 1110px;
+}
+
+.top-right-shape {
+  position: absolute;
+  width: 40%;
+  max-width: 312px;
+  top: -40px;
+  right: -165px;
 }
 
 main {
@@ -255,11 +268,14 @@ like: https://codepen.io/sosuke/pen/Pjoqqp */
 
 @media screen and (max-width:1144px) {
   body {
-    background-image: url(./assets/bg-pattern-1.svg), url(./assets/bg-main-tablet.png);
-    background-repeat: no-repeat, no-repeat;
-    background-attachment: fixed;
-    background-size: 266px, auto;
-    background-position: 75vw -3vh, -50vw -20vh;
+    background-image: url(./assets/bg-main-tablet.png);
+    background-position: left -350px top -250px;
+  }
+
+  .top-right-shape {
+    position: absolute;
+    top: -32px;
+    right: -75px;
   }
   
   .product-description {
@@ -318,12 +334,13 @@ like: https://codepen.io/sosuke/pen/Pjoqqp */
 @media screen and (max-width:531px) {
   body {
     background-image: url(./assets/bg-main-mobile.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: auto;
-    background-position: 5vw -25vh;
+    background-position: left top -250px;
   }
-  
+
+  .top-right-shape {
+    display: none;
+  }
+
   .product-description {
     max-width: 520px;
   }
@@ -356,7 +373,8 @@ like: https://codepen.io/sosuke/pen/Pjoqqp */
     padding: 36px;
     top: 380px;
     right: unset;
-    max-width: 399px;
+    width: 100%;
+    max-width: unset;
   }
 
   .headline-secondary { 

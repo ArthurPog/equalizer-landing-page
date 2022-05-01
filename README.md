@@ -1,4 +1,4 @@
-# My eighth project and solution to the order summary component challenge over at [Frontend Mentor](https://www.frontendmentor.io/challenges)
+# My eighth project and solution to the equalizer landing page challenge over at [Frontend Mentor](https://www.frontendmentor.io/challenges)
 
 ## This was the assignment
 

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 
+* {
+  transition: .3s ease-out;
+}
+
 :root {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 16px;
@@ -48,15 +52,16 @@
 
 body {
   margin: 0;
-  padding: 2rem;
+  padding: 0 2rem;
   background-image: url(./assets/bg-pattern-1.svg), url(./assets/bg-main-desktop.png);
   background-repeat: no-repeat, repeat;
   background-attachment: fixed;
-  background-position: calc(50% + 570px) calc(50% - 460px), calc(50% - 80px) calc(50% + 150px);
+  background-position: 75vw -3vh, 1vw -25vh;
   background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: .3 ease;
 }
 
 main {
@@ -167,6 +172,8 @@ button:first-of-type {
 
 button:last-of-type {
   margin-top: 1rem;
+  color: var(--black);
+  background: var(--white);
   transition: .3s ease;
 }
 
@@ -251,8 +258,8 @@ like: https://codepen.io/sosuke/pen/Pjoqqp */
     background-image: url(./assets/bg-pattern-1.svg), url(./assets/bg-main-tablet.png);
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed;
-    background-position: calc(50% + 300px) calc(50% - 480px), calc(50% - 150px) calc(50% - 350px);
     background-size: 266px, auto;
+    background-position: 75vw -3vh, -50vw -20vh;
   }
   
   .product-description {
@@ -313,8 +320,8 @@ like: https://codepen.io/sosuke/pen/Pjoqqp */
     background-image: url(./assets/bg-main-mobile.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: calc(50% + 120px) calc(50% - 500px);
     background-size: auto;
+    background-position: 5vw -25vh;
   }
   
   .product-description {

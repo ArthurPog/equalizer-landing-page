@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+:root {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  /* Colours */
+  --cyan: #66E2DC;
+  --dark-orange: #FA7453;
+  --orange: #FFB964;
+  --white: #FCFAF9;
+  --black: #191826;
+
+  --container-border-radius: 12px;
+  --button-font-size: 18px;
+
+  /* Large font properties */
+  --h1-font-size-l: 88px; 
+  --h1-line-height-l: 88px;
+  --h2-font-size-l: 40px;
+  --prgrf-main-font-size-l: 20px;
+  --prgrf-main-line-height-l: 34px;
+  --prgrf-c2a-font-size-l: 20px;
+  --prgrf-c2a-line-height-l: 34px;
+  --footnote-font-size-l:  16px;
+  --footnote-line-height-l: 26px;
+  /* Medium font properties */
+  --h1-font-size-m: 64px;
+  --h1-line-height-m: 64px;
+  --h2-font-size-m: 32px;
+  --prgrf-main-font-size-m: 18px;
+  --prgrf-main-line-height-m: 28px;
+  --prgrf-c2a-font-size-m: 18px;
+  --prgrf-c2a-line-height-m: 28px;
+  --footnote-font-size-m: 16px;
+  --footnote-line-height-m: 26px;
+  /* Small font properties */
+  --h1-font-size-s: 40px;
+  --h1-line-height-s: 48px;
+  --h2-font-size-s: 32px;
+  --prgrf-main-font-size-s: 16px;
+  --prgrf-main-line-height-s: 26px;
+  --prgrf-c2a-font-size-s: 18px;
+  --prgrf-c2a-line-height-s: 28px;
+  --footnote-font-size-s: 16px;
+  --footnote-line-height-s: 26px;
+   --letter-spacing: -1px;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  background-image: url(./assets/bg-pattern-1.svg), url(./assets/bg-main-desktop.png);
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed;
+  background-position: calc(50% + 570px) calc(50% - 460px), calc(50% - 80px) calc(50% + 150px);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  margin: 62px 165px 0;
+  padding: 0;
+  width: 100%;
+  max-width: 1110px;
+}
+
+h2, h1 {
+  margin: 0;
+}
+
+.product-description {
+  max-width: 1015px;
+  color: var(--black);
+}
+
+.headline-main {
+  font-size: var(--h1-font-size-l);
+  line-height: var(--h1-line-height-l);
+  letter-spacing: var(--letter-spacing);
+  margin: 127px 0 40px;
+}
+
+.prgrf-main {
+  max-width: 825px;
+  font-size: var(--prgrf-main-font-size-l);
+  line-height: var(--prgrf-main-line-height-l);
+}
+
+.download-section {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 321px;
+  min-height: 600px;
+  border-radius: var(--container-border-radius);
+  background: url(./assets/bg-pattern-2.svg) no-repeat;
+  background-position: 336px -40px;
+  background-color: var(--black);
+}
+
+.app {
+  position: absolute;
+  max-width: 312px;
+  top: -213px;
+  left: 102px;
+}
+
+.download-c2a {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 58px;
+  top: 90px;
+  right: 95px;
+  background: var(--dark-orange);
+  max-width: 446px;
+  border-radius: var(--container-border-radius);
+  color: var(--white);
+}
+
+.headline-secondary { 
+  font-size: var(--h2-font-size-l);
+}
+
+.prgrf-c2a {
+  font-size: var(--prgrf-c2a-font-size-l);
+  line-height: var(--prgrf-c2a-line-height-l);
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 65px;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+button {
+  box-sizing: border-box;
+  border-radius: var(--container-border-radius);
+  border: none;
+  width: 100%;
+  max-width: 333px;
+  height: 61px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: var(--button-font-size);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button img {
+  display: block;
+  margin-right: .5rem;
+}
+
+button:first-of-type {
+  margin-top: 2rem;
+  color: var(--white);
+  background: var(--black);
+  transition: .3s ease;
+}
+
+button:last-of-type {
+  margin-top: 1rem;
+  transition: .3s ease;
+}
+
+button:first-of-type:hover {
+  background: var(--cyan);
+}
+
+button:last-of-type:hover {
+  background: var(--orange);
+}
+
+button:first-of-type:active {
+  background: var(--white);
+  color: grey;
+}
+
+button:last-of-type:active {
+  background: var(--white);
+}
+
+footer {
+  margin: 202px 165px 91px;
+  width: 100%;
+  max-width: 1110px;
+  color: var(--black);
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo-footer {
+  margin-right: 8rem; 
+}
+
+.legal-nfo-and-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footnote:first-of-type {
+  display: inline;
+}
+
+.footnote {
+  margin: 0;
+}
+
+.legal-nfo {
+  max-width: 366px;
+  line-height: var(--footnote-line-height-l);
+}
+
+a {
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--black);
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+a:visited {
+  color: var(--black);
+}
+
+.social-icons a:nth-child(2) {
+  margin: 0 1rem;
+}
+
+/* There is a tool created by Barrett Sonntag that automatically
+creates filter values that changes a black icon to any color you
+like: https://codepen.io/sosuke/pen/Pjoqqp */
+.social-icons img:hover {
+  filter: invert(72%) sepia(69%) saturate(448%) hue-rotate(331deg) brightness(104%) contrast(101%);
+}
+
+@media screen and (max-width:1144px) {
+  body {
+    background-image: url(./assets/bg-pattern-1.svg), url(./assets/bg-main-tablet.png);
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-position: calc(50% + 300px) calc(50% - 480px), calc(50% - 150px) calc(50% - 350px);
+    background-size: 266px, auto;
+  }
+  
+  .product-description {
+    max-width: 520px;
+  }
+
+  .headline-main {
+    font-size: var(--h1-font-size-m);
+    line-height: var(--h1-line-height-m);
+    margin: 95px 0 28px;
+  }
+  
+  .prgrf-main {
+    font-size: var(--prgrf-main-font-size-m);
+    line-height: var(--prgrf-main-line-height-m);
+  }
+
+  .download-section {
+    margin-top: 249px;
+    background-position: 229px -31px;
+    background-size: 280px;
+  }
+
+  .app {
+    max-width: 270px;
+    top: -138px;
+    left: 64px;
+  }
+  
+  .download-c2a {
+    padding: 48px;
+    top: 150px;
+    right: 56px;
+    max-width: 399px;
+  }
+
+  .headline-secondary { 
+    font-size: var(--h2-font-size-m);
+  }
+  
+  .prgrf-c2a {
+    font-size: var(--prgrf-c2a-font-size-m);
+    line-height: var(--prgrf-c2a-line-height-m);
+  }
+
+  footer {
+    display: unset;
+    margin-top: 183px;
+  }
+
+  .logo-footer {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width:531px) {
+  body {
+    background-image: url(./assets/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: calc(50% + 120px) calc(50% - 500px);
+    background-size: auto;
+  }
+  
+  .product-description {
+    max-width: 520px;
+  }
+
+  .headline-main {
+    font-size: var(--h1-font-size-s);
+    line-height: var(--h1-line-height-s);
+    margin: 64px 0 20px;
+  }
+  
+  .prgrf-main {
+    font-size: var(--prgrf-main-font-size-s);
+    line-height: var(--prgrf-main-line-height-s);
+  }
+
+  .download-section {
+    margin-top: 166px;
+    background-position: top;
+    background-size: 280px;
+  }
+
+  .app {
+    max-width: 208px;
+    top: -98px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .download-c2a {
+    padding: 36px;
+    top: 380px;
+    right: unset;
+    max-width: 399px;
+  }
+
+  .headline-secondary { 
+    font-size: var(--h2-font-size-s);
+  }
+  
+  .prgrf-c2a {
+    font-size: var(--prgrf-c2a-font-size-s);
+    line-height: var(--prgrf-c2a-line-height-s);
+  }
+
+  footer {
+    display: unset;
+    margin-top: 390px;
+  }
+
+  .logo-footer {
+    margin-bottom: 2rem;
+  }
+
+  .legal-nfo-and-icons {
+    display: unset;
+  }
+
+  .legal-nfo {
+    margin-bottom: 4rem;
+  }
+}

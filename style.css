@@ -331,7 +331,7 @@ like: https://codepen.io/sosuke/pen/Pjoqqp */
   }
 }
 
-@media screen and (max-width:531px) {
+@media screen and (max-width:555px) {
   body {
     background-image: url(./assets/bg-main-mobile.png);
     background-position: left top -250px;
